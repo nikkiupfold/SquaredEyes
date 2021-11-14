@@ -1,94 +1,137 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="keywords"
-      content="independent films, videos, movies, streaming, global, connect, network, film production, film-lovers, online cinema"
-    />
-    <meta
-      name="description"
-      content="We provide platform for independent film-makers and film-lovers. A platform to connect, share and enjoy."
-    />
-    <title>Square Eyes</title>
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap"
-      rel="stylesheet"
-    />
-    <link href="css/styles.css" rel="stylesheet" />
-    <script
-      src="https://kit.fontawesome.com/29ae300af2.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    <header>
-      <div class="logo" id="logo">
-        <a href="index.html">
-          <img src="images/logo.png" alt="Logo" />
-        </a>
-      </div>
-      <label for="hamburger-menu"><i class="fas fa-bars"></i></label>
-      <input type="checkbox" id="hamburger-menu" />
-      <nav>
-        <ul>
-          <li><a href="index.html">HOME</a></li>
-          <li><a href="films.html">SEARCH</a></li>
-          <li><a href="contact.html">CONTACT US</a></li>
-          <li><a href="login.html">LOG IN</a></li>
-          <li><a href="signup.html">SIGN UP</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <section class="welcome">
-        <div class="welcome__content">
-          <h1>Connecting Film-Lovers</h1>
-          <a href="signup.html" class="cta cta-large">CONNECT</a>
-        </div>
-      </section>
-      <section class="row">
-        <div>
-          <h2>Virtual Cinema:</h2>
-          <div class="products">
-            <img src="images/virtualcinema.jpeg" alt="Cinema" />
-        </div>
-      </section>
+<html>
 
-      <section class="featured">
-        <h2>Watch our unique and inspiring films</h2>
-        <div class="products">
-          <img src="images/new releases.jpg" alt="Customer Service Working" />
-          <h3>New Releases</h3>
-          <p>100nok</p>
-          <a href="products/search" class="cta cta-small">Watch</a>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SquareEyes</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/28b356bcc2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt="squared eyeglasses" /></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-window-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="search.html">SEARCH</a></li>
+                    <li><a href="signup.html">SIGN UP</a></li>
+                    <li><a href="login.html">LOG IN</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars fa-2x" style="color: white" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>WELCOME INDEPENDENT FILM MAKERS</h1>
+            <p>Share.Earn.Enjoy</p>
+            <a href="" class="hero-btn">CONNECT</a>
         </div>
-        <div class="products">
-          <img src="images/travel.jpg" alt="Family of Elephants Walking" />
-          <h3>Travel</h3>
-          <div class="products--sale">
-            <p class="old-price">150nok</p>
-            <p>100nok</p>
-          </div>
-          <a href="products/search.html" class="cta cta-sale cta-small"
-            >On sale</a
-          >
         </div>
-        <div class="products">
-          <img src="images/womenś world.jpg" alt="Two Females Hugging" />
-          <h3>Women´s world</h3>
-          <p>120nok</p>
-          <a href="products/search.html" class="cta cta-small">Watch</a>
+        <div class="social-media">
+            <a href="" class="social-media-link">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="" class="social-media-link">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="" class="social-media-link">
+                <i class="fab fa-facebook-f"></i>
+            </a>
         </div>
-        <div class="products">
-          <img src="images/music and art.jpg" alt="Man Playing the Piano" />
-          <h3>Music and Art</h3>
-          <p>120nok</p>
-          <a href="products/search.html" class="cta cta-small">Watch</a>
+    </section>
+    <!--------films-------->
+    <section>
+        <div class="popular-films">
+            <div class="heading-text">
+                <h1>Filmlovers</h1>
+            </div>
+            <div class="sub-heading">
+                <h2>Check out our online cinema.</h2>
+            </div>
         </div>
-      </section>
-    </main>
-    <footer>Copyright &copy;</footer>
-  </body>
+
+        <div class="film-images">
+            <div class="films">
+                <div class="film-image">
+                    <a href="#"><img src="./images/faith.jpg" alt="woman praying" /></a>
+                    <p class="film-name">
+                        Faith <br />
+                        <img src="./images/star.png" />
+                        <img src="./images/star.png" />
+                        <img src="./images/star.png" />
+                        <img src="./images/star.png" />
+                    </p>
+                    <div class="price">
+                        <h3>NOK 29.00</h3>
+                        <a href="" class="hero-btn">Watch</a>
+                    </div>
+                </div>
+                <div class="film-image2">
+                    <a href="#"><img src="./images/hope.jpg" alt="word hope curved in stone" /></a>
+                    <p class="film-name">
+                        Hope <br />
+                        <img src="./images/star.png" />
+                        <img src="./images/star.png" />
+                        <img src="./images/star.png" />
+                    </p>
+                    <div class="price">
+                        <h3>NOK 29.00</h3>
+                        <a href="" class="hero-btn">Watch</a>
+                    </div>
+                </div>
+                <div class="film-image3">
+                    <a href="#"><img src="./images/love.jpg" alt="mother and child" /></a>
+                    <p class="film-name">
+                        Love <br />
+                        <img src="./images/star.png" />
+                        <img src="./images/star.png" />
+                        <img src="./images/star.png" />
+                        <img src="./images/star.png" />
+                    </p>
+                    <div class="price">
+                        <h3>NOK 29.00</h3>
+                        <a href="" class="hero-btn">Watch</a>
+                    </div>
+                </div>
+                <div class="film-image4">
+                    <a href="#"><img src="./images/life.jpg" alt="glass of iced tea" /></a>
+                    <p class="film-name">
+                        Life <br />
+                        <img src="./images/star.png" />
+                        <img src="./images/star.png" />
+                        <img src="./images/star.png" />
+                    </p>
+                    <div class="price">
+                        <h3>NOK 29.00</h3>
+                        <a href="" class="hero-btn">Watch</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--------Footer-------->
+
+    <footer class="footer">
+        <p class="copyright">© Copyright 2021 - SquareEyes</p>
+    </footer>
+
+    <!--------JavaScript for Toggle Menu-------->
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+
 </html>
